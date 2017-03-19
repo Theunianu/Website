@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+	<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+	.w3-sidenav a {padding:20px}
+	</style>
+	<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+</head>
+<body >
+<nav class="w3-sidenav w3-card-2 w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidenav">
+  <a href="index.html" onclick="w3_close()" class="w3-closenav">Home</a>
+  <a href="intheatres.html" onclick="w3_close()">In theatres</a>
+  <a href="comingsoon.html" onclick="w3_close()">Coming soon</a>
+   <a href="feedback.html" onclick="w3_close()">Feedback</a>
+   <a href="home.html" onclick="w3_close()">Logout</a>
+</nav>
+<div class="w3-top">
+  <div class="w3-white w3-xlarge w3-padding-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-opennav w3-left w3-hover-text-grey" onmouseover="w3_open()">Menu</div>
+	  <div class="w3-center">Movie Hunt</div>
+  </div>
+</div>
+<!--Page content-->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px" onmouseover="w3_close()">
+<h1> Popular</h1>
+<!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+     <a href="popular.html#nemo"> <img src="nemo.jpeg" alt="Finding nemo" style="width:100%"></a>
+      <h3 >Finding Nemo</h3>
+      <p>After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.</p>
+    </div>
+	<div class="w3-quarter">
+     <a href="popular.html#hf"> <img src="happyfeet.jpg" alt="happy" style="width:100%"></a>
+      <h3>Happy Feet</h3>
+      <p>Into the world of the Emperor Penguins, who find their soul mates through song, a penguin is born who cannot sing. But he can tap dance something fierce!</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="popular.html#st"><img src="sharktale.jpg" alt="shark" style="width:100%"></a>
+      <h3>Shark Tale</h3>
+      <p>When a son of a gangster shark boss is accidentally killed while on the hunt, his would-be prey and his vegetarian brother both decide to use the incident to their own advantage.</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="popular.html#zoo"><img src="zootopia.jpg" alt="zoo" style="width:100%"></a>
+      <h3>Zootopia</h3>
+      <p>In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.</p>
+    </div>
+</div>
+
+<!-- Second Photo Grid-->
+<div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="popular.html#frz"><img src="frozen.jpg" alt="frozen" style="width:100%"></a>
+      <h3>Frozen</h3></a>
+      <p>When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister, Anna, teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="popular.html#cr"><img src="chicken run.jpg" alt="chicken" style="width:100%"></a>
+      <h3>Chicken Run</h3>
+      <p>When a bird "flies" into a chicken farm, the fellow chickens see him as an opportunity to escape their evil owners.</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="popular.html#kfp"><img src="kungfu.jpg" alt="kungfu" style="width:100%"></a>
+      <h3>Kung Fu Panda 2</h3>
+      <p>Po and his friends fight to stop a peacock villain from conquering China with a deadly new weapon, but first the Dragon Warrior must come to terms with his past.</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="popular.html#rt"><img src="ratatouille.jpg" alt="ratatouille" style="width:100%"></a>
+      <h3>Ratatouille</h3>
+      <p>A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.</p>
+    </div>
+  </div>
+	</div>
+</body>
+</html>

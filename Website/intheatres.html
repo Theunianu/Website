@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+	<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+	.w3-sidenav a {padding:20px}
+
+	</style>
+	<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+	}
+
+</script>
+</head>
+<body >
+<nav class="w3-sidenav w3-card-2 w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidenav">
+  <a href="index.html" onclick="w3_close()" class="w3-closenav">Home</a>
+  <a href="intheatres.html" onclick="w3_close()">In theatres</a>
+  <a href="comingsoon.html" onclick="w3_close()">Coming soon</a>
+   <a href="feedback.html" onclick="w3_close()">Feedback</a>
+    <a href="home.html" onclick="w3_close()">Logout</a>
+</nav>
+<div class="w3-top">
+  <div class="w3-white w3-xlarge w3-padding-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-opennav w3-left w3-hover-text-grey" onmouseover="w3_open()">Menu</div>
+	  <div class="w3-center">Movie Hunt</div>
+  </div>
+</div>
+<!--Page content-->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px" onmouseover="w3_close()">
+<h1> In Theatres</h1>
+<!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+  <div class="w3-quarter">
+      <img src="dory.jpg" alt="dory" style="width:100%">
+      <h3>Finding Dory</h3>
+      <p>The friendly but forgetful blue tang fish begins a search for her long-lost parents, and everyone learns a few things about the real meaning of family along the way.</p>
+	  <p><b>Runtime:</b> 97 mins</p>
+    </div>
+    <div class="w3-quarter">
+   <img src="ice.jpg" alt="ice" style="width:100%">
+      <h3 >Ice Age: Collision Course</h3>
+      <p>Manny, Diego, and Sid join up with Buck to fend off a meteor strike that would destroy the world.</p>
+	    <p><b>Runtime:</b> 94 mins</p>
+    </div>
+	<div class="w3-quarter">
+     <img src="angry.jpg" alt="angry" style="width:100%">
+      <h3>The Angry Birds Movie</h3>
+      <p>Find out why the birds are so angry. When an island populated by happy, flightless birds is visited by mysterious green piggies, it's up to three unlikely outcasts - Red, Chuck and Bomb - to figure out what the pigs are up to.</p>
+	   <p><b>Runtime:</b> 97 mins</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="pets.jpg" alt="pets" style="width:100%">
+      <h3>The Secret Life of Pets</h3>
+      <p>The quiet life of a terrier named Max is upended when his owner takes in Duke, a stray whom Max instantly dislikes.</p>
+	  <p><b>Runtime:</b> 87 mins</p>
+    </div>
+    
+</div>
+</div>
+</body>
+</html>

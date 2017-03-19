@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+	<style>
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+	.w3-sidenav a {padding:20px}
+
+	</style>
+	<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+	}
+	function validate()
+	{
+	alert("Thank you for your feedback!");
+	}
+
+</script>
+</head>
+<body >
+<nav class="w3-sidenav w3-card-2 w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidenav">
+  <a href="index.html" onclick="w3_close()" class="w3-closenav">Home</a>
+  <a href="intheatres.html" onclick="w3_close()">In theatres</a>
+  <a href="comingsoon.html" onclick="w3_close()">Coming soon</a>
+   <a href="feedback.html" onclick="w3_close()">Feedback</a>
+    <a href="home.html" onclick="w3_close()">Logout</a>
+</nav>
+<div class="w3-top">
+  <div class="w3-white w3-xlarge w3-padding-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-opennav w3-left w3-hover-text-grey" onmouseover="w3_open()">Menu</div>
+	  <div class="w3-center">Movie Hunt</div>
+  </div>
+</div>
+<!--pagecontent-->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px" onmouseover="w3_close()">
+<div class="w3-row-padding w3-padding-16 w3-center" id="login">
+<form name="feedback" method="get">
+  <div class="container">
+  </br></br>
+<label><b>Name: </b></label>
+    <input type="text" placeholder="Enter name" name="uname" id="n1"></br></br>
+    <label><b>E-mail id: </b></label>
+    <input type="email" placeholder="Enter email" name="uemail" id="e1"></br></br>
+	<b>Which features you liked about the website?</b>
+	</br>
+	<input type="checkbox" name="f1" value="navigation"> Ease of navigation</input>
+	</br>
+	<input type="checkbox" name="f2" value="Pictures"> Pictures </input>
+	</br>
+	<input type="checkbox" name="f3" value="layout"> Layout </input>
+	</br>
+	<p><b>Any suggestions:</b></p>
+	<textarea rows="10" cols="50" placeholder="Comments"></textarea>
+	</br></br>
+<button type="Submit" onclick="validate()"> Submit</button>
+</form>
+</div>
+</div>
+</body>
+</html>
